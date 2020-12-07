@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>catch</title>
+</head>
+<body>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <style>body{
+      margin:0;
+      background: darkblue ;;
+  }</style>
+  <div class="fixed text-white ml-2 mh-2 select-none"><span>Tower Score : </span><span id="scoreEl">0</span></div>
+  <div class="fixed inset-0 flex items-center justify-center" id="modalEl">
+      <div class = "bg-white w-full p-6 text-center">
+          <h1 class="font-bold text-4xl" id="bigScoreEl">0</h1>
+          <p>points</p>
+          <div>
+          <button class= "bg-green-500 text-white w-full py-2 rounded-full" id="StartGame">Start Game</button>
+          </div>
+       </div>
+  </div>
+  <canvas></canvas>
+  <script src="./index.js"></script>
+</body>
+</html>
